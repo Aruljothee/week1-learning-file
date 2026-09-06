@@ -49,7 +49,14 @@ Some of the fields I observed are:
 
 I used the GET request to get the GitHub user details. The request was successful and returned `200 OK`. The response data was in JSON format.
 
-## 2. POST Request
+## 2. Verbose GET Request
+
+### Command
+
+```bash
+curl.exe -v https://httpbin.org/get
+```
+## 3. POST Request
 
 ### Command
 
