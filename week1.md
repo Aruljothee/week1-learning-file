@@ -57,7 +57,7 @@ curl.exe -i -X POST https://httpbin.org/post -H "Content-Type: application/json"
 ```
 ### Status Code
 
-**200 OK**
+200 OK
 
 The request was successful and the server returned a response.
 
@@ -76,12 +76,12 @@ I used the verbose curl command to view the complete request and response detail
 ```bash
 curl.exe -i "https://httpbin.org/get?role=intern&track=python"
 ```
-Status Code
+### Status Code
 
 200 OK
 
 The request was successful and the server returned a response.
 
-Observation
+### Observation
 
 I used query parameters in the URL to send additional information to the server. The response showed the values of role and track in JSON format.
