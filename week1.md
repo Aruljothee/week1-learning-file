@@ -115,3 +115,27 @@ The response body contains information about the request, including the request 
 ### Observation
 
 I used the verbose curl command to view the complete request and response details. It showed the connection, HTTP request, response status, headers, and response body.
+
+## 4. Query Parameters
+
+### Command
+
+```bash
+curl.exe -i "https://httpbin.org/get?role=intern&track=python"
+```
+Status Code
+
+200 OK
+
+The request was successful and the server returned a response.
+
+Query Parameters
+role=intern - Specifies the role as intern.
+track=python - Specifies the learning track as Python.
+Response Body
+
+The response body contains the query parameters sent with the GET request.
+
+Observation
+
+I used query parameters in the URL to send additional information to the server. The response showed the values of role and track in JSON format.
