@@ -71,13 +71,13 @@ The request was successful and the server returned a response.
 
 ### Response Headers
 
-1. **Content-Type:** `application/json`
+1. **Content-Type:** application/json
    - The response is in JSON format.
 
-2. **Content-Length:** `255`
+2. **Content-Length:** 255
    - Shows the size of the response body.
 
-3. **Server:** `gunicorn/19.9.0`
+3. **Server:** gunicorn/19.9.0
    - Shows the server software handling the request.
 
 ### Response Body
