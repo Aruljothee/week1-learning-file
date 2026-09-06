@@ -6,19 +6,37 @@
 
 ```bash
 curl.exe -i https://api.github.com/users/torvalds
+Status Code
+200 OK
 
-**Status Code**  
-⬇️  
-**200 OK**  
-⬇️  
-"The request was successful and the GitHub user details were received."
+The request was successful and the GitHub user details were received.
 
-Then below that, you can add:
+Response Headers
+1. Content-Type
 
-**Response Headers → Content-Type → Cache-Control → ETag → Response Body → Observation**
+application/json
 
-### Important
+This means the response is in JSON format.
 
-You **don't need to type the actual terminal output** (`HTTP/1.1 200 OK`) into your Markdown. Just document your observation as **200 OK**.
+2. Cache-Control
 
-Since your current GitHub page only shows the command, you need to **edit `week1.md` and add the remaining sections underneath it**.
+public, max-age=60
+
+This tells us how the response can be cached.
+
+3. ETag
+
+ETag is used to identify the version of the response.
+
+Response Body
+
+The response body contains the details of the GitHub user torvalds.
+
+Some of the fields I observed are:
+
+login - GitHub username
+name - User name
+company - Company name
+location - User location
+public_repos - Number of public repositories
+followers - Number of followers
