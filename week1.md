@@ -14,29 +14,7 @@ curl.exe -i https://api.github.com/users/torvalds
 
 The request was successful and the GitHub user details were received.
 
-### Response Headers
-
-#### 1. Content-Type
-
-`application/json`
-
-This means the response is in JSON format.
-
-#### 2. Cache-Control
-
-`public, max-age=60`
-
-This tells us how the response can be cached.
-
-#### 3. ETag
-
-ETag is used to identify the version of the response.
-
 ### Response Body
-
-The response body contains the details of the GitHub user `torvalds`.
-
-Some of the fields I observed are:
 
 - `login` - GitHub username
 - `name` - User name
@@ -62,20 +40,6 @@ curl.exe -v https://httpbin.org/get
 
 The request was successful and the server returned a response.
 
-### Response Headers
-
-1. Content-Type: application/json
-
-   - The response is in JSON format.
-
-2. Content-Length: 255
-
-   - Shows the size of the response body.
-
-3. Server: gunicorn/19.9.0
-
-   - Shows the server software handling the request.
-
 ### Response Body
 
 The response body contains information about the request, including the request headers, origin, and URL.
@@ -97,17 +61,6 @@ curl.exe -i -X POST https://httpbin.org/post -H "Content-Type: application/json"
 
 The request was successful and the server returned a response.
 
-### Response Headers
-
-1. **Content-Type:** application/json
-   - The response is in JSON format.
-
-2. **Content-Length:** 255
-   - Shows the size of the response body.
-
-3. **Server:** gunicorn/19.9.0
-   - Shows the server software handling the request.
-
 ### Response Body
 
 The response body contains information about the request, including the request headers, origin, and URL.
@@ -128,13 +81,6 @@ Status Code
 200 OK
 
 The request was successful and the server returned a response.
-
-Query Parameters
-role=intern - Specifies the role as intern.
-track=python - Specifies the learning track as Python.
-Response Body
-
-The response body contains the query parameters sent with the GET request.
 
 Observation
 
