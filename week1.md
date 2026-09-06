@@ -62,3 +62,28 @@ curl.exe -v https://httpbin.org/get
 
 ```bash
 curl.exe -i -X POST https://httpbin.org/post -H "Content-Type: application/json" -d "{\"name\":\"Arul\",\"week\":1}"
+```
+### Status Code
+
+**200 OK**
+
+The request was successful and the server returned a response.
+
+### Response Headers
+
+1. **Content-Type:** `application/json`
+   - The response is in JSON format.
+
+2. **Content-Length:** `255`
+   - Shows the size of the response body.
+
+3. **Server:** `gunicorn/19.9.0`
+   - Shows the server software handling the request.
+
+### Response Body
+
+The response body contains information about the request, including the request headers, origin, and URL.
+
+### Observation
+
+I used the verbose curl command to view the complete request and response details. It showed the connection, HTTP request, response status, headers, and response body.
