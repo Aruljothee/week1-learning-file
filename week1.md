@@ -5,7 +5,7 @@
 ### Command
 
 ```bash
-curl.exe -i
+curl.exe -i https://api.github.com/users/torvalds
 
 ## Status Code
 
