@@ -48,3 +48,10 @@ Some of the fields I observed are:
 ### Observation
 
 I used the GET request to get the GitHub user details. The request was successful and returned `200 OK`. The response data was in JSON format.
+
+## 2. POST Request
+
+### Command
+
+```bash
+curl.exe -i -X POST https://httpbin.org/post -H "Content-Type: application/json" -d "{\"name\":\"Arul\",\"week\":1}"
