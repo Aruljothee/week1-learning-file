@@ -1,11 +1,5 @@
 # Week 1 - Lab 1
 
-## 1. GET Request
-
-### Command
-
-```bash
-curl.exe -i https://api.github.com/users/torvalds
 Status Code
 200 OK
 
@@ -38,5 +32,12 @@ login - GitHub username
 name - User name
 company - Company name
 location - User location
+
+## 1. GET Request
+
+### Command
+
+```bash
+curl.exe -i https://api.github.com/users/torvalds
 public_repos - Number of public repositories
 followers - Number of followers
